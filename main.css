@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+body {
+    font-family: arial sans-serif;
+
+}
+
+
+
+.navbar {
+    background-color: #fff;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    min-height: 80px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+
+
+
+}
+
+
+.nav-links {
+    list-style-type: none;
+}
+
+
+li {
+    display: inline-block;
+    padding: 30px 40px;
+
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover {
+    color: purple
+}
+
+.logo {
+    height: 50px;
+}
+
+
+.menu {
+    display: none;
+}
+
+.menu-line {
+    width: 25px;
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 4px;
+}
+
+
+#container {
+    background: url(./images/background.png);
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+span {
+    color: #000;
+}
+
+
+.title {
+    position: absolute;
+    top: 250px;
+    left: 130px;
+}
+
+.title h1 {
+    color: white;
+    font-size: 4rem;
+
+}
+
+.title p {
+    font-family: sans-serif;
+    padding-top: 30px;
+    font-size: 35px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 40px;
+    margin-left: 130px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: purple;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-width:950px) {
+
+    .navbar {
+        flex-direction: column;
+
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 30px;
+    }
+
+
+    .nav-links {
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+
+    }
+
+    li {
+        display: block;
+        border-top: 1px solid black;
+        padding: 20px;
+    }
+
+
+
+
+    .logo-width {
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 10px;
+
+    }
+
+    .active {
+        display: block;
+    }
+
+
+    #container {
+        background-position: center center;
+
+
+    }
+
+
+
+}
