@@ -82,9 +82,11 @@ span {
 
 
 .title {
-    position: absolute;
-    top: 250px;
-    left: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 140px;
+    padding-left: 110px;
 }
 
 .title h1 {
@@ -102,14 +104,18 @@ span {
 .btn {
     padding: 10px 20px;
     margin-top: 40px;
-    margin-left: 130px;
+    margin-left: 100px;
     border-radius: 20px;
     text-transform: uppercase;
     font-weight: 700;
     background-color: purple;
+    border: 2px solid white;
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
 
 
 
@@ -163,11 +169,63 @@ span {
 
 
     #container {
-        background-position: center center;
+        background-position: center;
 
 
     }
 
+}
+
+
+
+@media all and (max-width:768px) {
+
+    .title {
+        padding-left: 40px;
+
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .title p {
+        font-size: 23px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-left: 40px;
+    }
+
+    #container {
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+
+
+}
+
+@media all and (max-width:400px) {
+
+    .title h1 {
+        font-size: 2.5rem;
+    }
+
+
+}
+
+
+@media all and (max-width:320px) {
+
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .title p {
+        font-size: 20px;
+    }
 
 
 }
