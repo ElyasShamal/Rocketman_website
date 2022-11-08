@@ -118,7 +118,132 @@ a {
 }
 
 
+#hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 1000px;
 
+    column-gap: 5rem;
+    margin: auto;
+    max-width: 100%;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+
+h2 {
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 4rem;
+    font-size: 30px;
+}
+
+
+#hero h4 {
+    padding-top: 1rem;
+    font-size: 25px;
+}
+
+
+#hero p {
+    padding-top: 1rem;
+}
+
+
+#hero button {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 20px;
+    background-color: purple;
+    color: white;
+    border: 2px solid black;
+    font-weight: 700;
+
+    margin-bottom: 10rem;
+
+}
+
+#hero button:hover {
+    background-color: rgba(0, 0, 0, 0.99);
+    color: white;
+    transform: translatey(8px);
+
+}
+
+code {
+    color: red;
+}
+
+.block {
+    display: block;
+    text-align: center;
+    position: relative;
+
+}
+
+.block img {
+    width: 700px;
+    max-width: 100%;
+    position: relative;
+    bottom: 50px;
+}
+
+
+.div1 {
+    position: absolute;
+    left: 800px;
+    top: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 50px 30px;
+}
+
+
+.div1 button {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+
+
+
+.img-two {
+    display: block;
+    position: relative;
+    top: 180px;
+    margin: auto;
+}
+
+
+.div2 {
+    position: absolute;
+    left: 267px;
+    bottom: -250px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 50px 30px;
+
+
+}
+
+.div2 button {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    font-weight: 700;
+
+}
+
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    outline: 2px solid red;
+    outline-offset: unset;
+    cursor: pointer;
+}
 
 
 
